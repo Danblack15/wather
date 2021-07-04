@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+    <title>Погода</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="up_block">
+            <div class="left_block_up">
+                <div class="city_name">Омск</div>
+                    <p class="select_city">Сменить город</p>
+                    <img src="img/geopoz.png">
+                    <p class="mygeo">Мое местоположение</p>
+            </div>
+            <div class="rigth_block_up">
+                    <span>º</span>
+                    <ul>
+                        <li class="C" id="C">C</li>
+                        <li class="F" id="F">F</li>
+                    </ul>
+            </div>
+            <div class="modal_serth">
+                <div class="serth_block">
+                    <input type="text" placeholder="Название города" class="serh_city">
+                    <!--<input type="submit" value="OK">-->
+                </div>
+                <div class="cities">
+                    <!--<p>Пермь</p>
+                    <p>Саратов</p>
+                    <p>Москва</p>
+                    <p>Санкт-Петербург</p>-->
+                </div>
+            </div>
+        </div>
+        <div class="center_block">
+            <div>
+                <div class="img"><img src="img/rain.svg"></div>
+                <p><span class="deg">14</span><span class="izm">º</span></p>
+            </div>
+            <div class="media_pod_center_block">
+                <p>Дождь</p>
+            </div>
+        </div>
+        <div class="pod_center_block">
+            <p>Преимущественно солнечно</p>
+        </div>
+        <div class="under_block">
+                <p>Ветер</p>
+                <p><span class="speed_wind">5</span> м/c, <span class="deg_wind">западный</span></p>
+
+                <p>Давление</p>
+                <p><span class="pressure">750</span> мм рт. ст.</p>
+
+                <p>Влажность</p>
+                <p><span class="humidity">60</span>%</p>
+
+                <p>Вероятность дождя</p>
+                <p>10%</p>
+        </div>
+    </div>
+</body>
+</html>
